@@ -1,0 +1,30 @@
+.TodoListItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-mdcheckbox {
+    height: 20px;
+}
+
+.checkbox-mdcheckboxoutlineblank {
+    height: 20px;
+}
+
+.input {
+    color: black;
+}
+
+.remove {
+    display: flex;
+
+    &-btn {
+        height: 20px;
+    }
+}
