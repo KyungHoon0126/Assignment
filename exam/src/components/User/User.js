@@ -1,6 +1,6 @@
 import React from 'react'
 
-const User = ({ user }) => {
+const User = ({ user, onRemove }) => {
     const { id, name, phonenumber, email } = user;
 
     return (
@@ -26,7 +26,7 @@ const User = ({ user }) => {
             </div>
 
             <button>수정</button>
-            <button>삭제</button>
+            <button onClick={onRemove}>삭제</button>
 
             <br />
             <br />

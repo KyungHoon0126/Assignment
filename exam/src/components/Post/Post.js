@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Post = ({ post }) => {
+const Post = ({ post, onRemove }) => {
     const { id, title, content } = post;
 
     return (
@@ -26,7 +26,7 @@ const Post = ({ post }) => {
             </div>
 
             <button>수정</button>
-            <button>삭제</button>
+            <button onClick={onRemove}>삭제</button>
 
             <br />
             <br />

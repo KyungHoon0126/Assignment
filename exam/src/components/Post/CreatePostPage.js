@@ -149,6 +149,7 @@ function CreatePostPage(props) {
                 {posts.map(post => (
                     <Post post={post}
                         key={post.id}
+                        onRemove={onRemove}
                     />
                 ))}
             </div>

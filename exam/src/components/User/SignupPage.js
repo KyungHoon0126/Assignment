@@ -176,6 +176,7 @@ const SignupPage = (props) => {
                     {users.map(user => (
                         <User user={user}
                             key={user.id}
+                            onRemove={onRemove}
                         />
                     ))}
             </div>
