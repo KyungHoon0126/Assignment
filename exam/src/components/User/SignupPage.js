@@ -157,7 +157,7 @@ const SignupPage = (props) => {
             <br />
 
             <div>
-                <h1>회원 조회 및 수정</h1>
+                <h1>2. 회원 조회 및 수정</h1>
             
                 <label>조회할 아이디 : </label>
                 

@@ -142,7 +142,7 @@ function CreatePostPage(props) {
             </div>
 
             <div>
-                <h1>게시글 목록</h1>
+                <h1>7. 게시글 목록</h1>
                 <button>게시글 전체 검색</button>
                 <br />
 
