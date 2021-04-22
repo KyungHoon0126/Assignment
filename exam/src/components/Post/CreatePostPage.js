@@ -43,7 +43,7 @@ function CreatePostPage(props) {
           case "INSERT":
             return posts.concat(action.post);
           case "REMOVE":
-            return posts.filter(post => post.id !== action.id);
+            return posts.filter(post => post.idx !== action.idx);
           default:
             return posts;
         }
@@ -141,14 +141,14 @@ function CreatePostPage(props) {
                 ))}
             </div>
 
-            <div>
+            <div> 
                 <h1>7. 게시글 목록</h1>
                 <button>게시글 전체 검색</button>
                 <br />
 
                 {posts.map(post => (
                     <Post post={post}
-                        key={post.id}
+                        key={post.idx}
                         onRemove={onRemove}
                     />
                 ))}
