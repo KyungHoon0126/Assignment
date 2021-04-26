@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Post = ({ post, onRemove }) => {
-    const { id, title, content } = post;
+    const { idx, id, title, content } = post;
 
     return (
         <div>
@@ -26,7 +26,7 @@ const Post = ({ post, onRemove }) => {
             </div>
 
             <button>수정</button>
-            <button onClick={onRemove}>삭제</button>
+            <button onClick={() => onRemove(idx)}>삭제</button>
 
             <br />
             <br />

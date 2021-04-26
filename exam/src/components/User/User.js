@@ -1,7 +1,7 @@
 import React from 'react'
 
 const User = ({ user, onRemove }) => {
-    const { id, name, phonenumber, email } = user;
+    const { idx, id, name, phonenumber, email } = user;
 
     return (
         <div>
@@ -26,7 +26,7 @@ const User = ({ user, onRemove }) => {
             </div>
 
             <button>수정</button>
-            <button onClick={onRemove}>삭제</button>
+            <button onClick={() => onRemove(idx)}>삭제</button>
 
             <br />
             <br />

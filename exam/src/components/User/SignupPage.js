@@ -55,7 +55,7 @@ const SignupPage = (props) => {
           case "INSERT":
             return users.concat(action.user);
           case "REMOVE":
-            return users.filter(user => user.id !== action.id);
+            return users.filter(user => user.idx !== action.idx);
           default:
             return users;
         }
@@ -189,6 +189,7 @@ const SignupPage = (props) => {
                 {users.map(user => (
                     <UserList user={user}
                         key={user.id}
+                        onRemove={onRemove}
                     />
                 ))}
             </div>
