@@ -1,13 +1,13 @@
 import React from 'react'
 
-const User = ({ user, onRemove }) => {
-    const { idx, name, email } = user;
+const User = ({ user, onRemove, onModifyClick }) => {
+    const { id, username, email } = user;
 
     return (
         <div>
             <div>
                 <label>이름 : </label>
-                {name}
+                {username}
             </div>
 
             <div>
@@ -15,8 +15,8 @@ const User = ({ user, onRemove }) => {
                 {email}            
             </div>
 
-            <button>수정</button>
-            <button onClick={() => onRemove(idx)}>삭제</button>
+            <button onClick={() => onModifyClick(id)}>수정</button>
+            <button onClick={() => onRemove(id)}>삭제</button>
 
             <br />
             <br />

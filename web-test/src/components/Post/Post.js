@@ -1,18 +1,13 @@
 import React from 'react'
 
-const Post = ({ post, onRemove }) => {
-    const { idx, id, content } = post;
+const Post = ({ post, onRemove, onModifyClick }) => {
+    const { id, userId, content } = post;
 
     return (
         <div>
             <div>
                 <label>아이디 : </label>
-                {post.idx}
-            </div>
-
-            <div>
-                <label>글쓴이 : </label>
-                {id}
+                {userId}
             </div>
 
             <div>
@@ -20,8 +15,8 @@ const Post = ({ post, onRemove }) => {
                 {content}
             </div>
 
-            <button>수정</button>
-            <button onClick={() => onRemove(idx)}>삭제</button>
+            <button onClick={() => onModifyClick(id)}>수정</button>
+            <button onClick={() => onRemove(id)}>삭제</button>
 
             <br />
             <br />
